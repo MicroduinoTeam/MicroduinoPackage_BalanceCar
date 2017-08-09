@@ -3,9 +3,9 @@
 
 //通讯模式
 #if defined(__AVR_ATmega32U4__)
-#define BLE_HardSerial Serial1
+#define BLE_HardSerial Serial1	//CoreUSB的D0和D1是Serial1
 #else
-#define BLE_HardSerial Serial1
+#define BLE_HardSerial Serial	//Core的D0和D1是Serial
 #endif
 #define BLE_SPEED 9600  //蓝牙接口速度
 #define NRF_CHANNEL 70  //nRF通道
